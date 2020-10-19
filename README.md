@@ -1,4 +1,6 @@
 # Mini- folder create app using PHP OOP
+A small app based on PHP OOP.
+
 
 ### Highlighting the functionalities
 - You can make folder by typing the name of folder.
