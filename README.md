@@ -1,5 +1,9 @@
 # Mini- folder create app using PHP OOP
-A small app based on PHP OOP, to make folders by typing name of folder. Get the list of folder and can be deleted.
+
+### Highlighting the functionalities
+- You can make folder by typing the name of folder.
+- The folder will be listed with a delete button.
+- On pressing delete button the folder will be deleted.
 
 ## Demo
 
