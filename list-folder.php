@@ -46,15 +46,17 @@
                 <h1>List Of Folders</h1>
                 <ul>
                     <?php 
+                        $i = 0;
                         foreach($folder->index() as $folder){
+                            $i++;
                             $folders = <<<EOD
-                            <li>{$folder} <a href="#" onclick="delFol('{$folder}')">Delete</a></li>
+                            <li>{$folder} <a href="#" onclick="delFol('{$folder}', $i)">Delete</a></li>
                             EOD;
                             echo $folders;
 
                             $form = <<<EOD
-                            <form id="rf{$folder}" action="submit/folder_delete.php" method ="POST" style="display: none;">
-                            <input type="text" name="folder_name" value={$folder}>
+                            <form id="rf{$i}" action="submit/folder_delete.php" method ="POST" style="display: none;">
+                            <input type="text" name="folder_name" value="{$folder}">
                             </form>
                             EOD;
 
@@ -72,9 +74,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <script>
-        function delFol(folder){
+        function delFol(folder, id){
             confirm("Are you sure?");
-            $( "#rf"+folder ).submit();
+            $( "#rf"+id ).submit();
         }
     </script>
 </body>
