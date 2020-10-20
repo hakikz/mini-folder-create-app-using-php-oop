@@ -15,6 +15,7 @@ A small app based on PHP OOP.
 
 - Just download the file.
 - Extract it.
-- Keep it htdocs/www folder. (If using xampp htdocs folder)
-- Paste the url in web browser.
+- Keep it inside htdocs/www folder. (If you are using xampp then keep it in htdocs folder)
+- go to the address bar in web browser.
+- type the url where you hosted the file. Like localhost/your_folder_name
 - Thats it.
